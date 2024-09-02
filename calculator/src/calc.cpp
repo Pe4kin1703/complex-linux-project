@@ -1,4 +1,6 @@
 #include <iostream>
+#include <cmath>
+
 #include "calc.hpp"
 
 using namespace std;
