@@ -2,6 +2,8 @@
 #include <string>
 #include <convertor/upper.hpp>
 #include <convertor/lower.hpp>
+#include <climits>
+#include <limits>
 
 using namespace std;
 

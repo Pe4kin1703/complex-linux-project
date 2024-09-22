@@ -24,7 +24,7 @@ $(lib_NAME): $(libcalc_OBJ)
 
 
 calculator: src/main.o $(lib_NAME)
-	$(CXX) $(CXX_FLAGS) -L . -l calc -o $@ $<
+	$(CXX) $(CXX_FLAGS) $< -L . -l calc   -o $@ 
 
 clean-calculator:
 	rm $(project_NAME) $(lib_NAME) $(SRC_DIR)/*.o

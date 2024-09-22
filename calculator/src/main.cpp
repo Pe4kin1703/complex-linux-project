@@ -3,6 +3,7 @@
 #include <functional>
 #include <cmath>
 #include "calc.hpp"
+#include <climits>
 
 using namespace std;
 

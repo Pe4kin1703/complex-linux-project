@@ -22,9 +22,10 @@ install-$(lib_NAME): $(lib_NAME)
 	install -m 755 $(lib_NAME) $(INSTALL_LIB_DIR)
 	install -d $(INSTALL_INCLUDE_DIR)
 	install -m 644 $(converter_LIB_INCLUDE) $(INSTALL_INCLUDE_DIR)
+	ldconfig
 
 $(project_NAME): $(project_SRC)
-	$(CXX) -o $@ -l convertor $^
+	$(CXX) $^  -l convertor -o $@ 
 
 clean-all: 
 	rm $(lib_NAME) $(project_NAME)
